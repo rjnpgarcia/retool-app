@@ -1,0 +1,38 @@
+{
+  "name": "retool-app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.20.7",
+    "crc32": "^0.2.2",
+    "localStorage": "^1.0.4",
+    "lodash": "^4.17.21",
+    "meteor-node-stubs": "^1.2.5",
+    "moment": "^2.29.4",
+    "mongodb": "^5.5.0",
+    "react": "^18.2.0",
+    "react-autocomplete-input": "^1.0.20",
+    "react-bootstrap": "^2.7.4",
+    "react-bootstrap-typeahead": "^6.2.2",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "react-moveable": "^0.50.7",
+    "react-resizable": "^3.0.5",
+    "react-rnd": "^10.4.1",
+    "react-router-dom": "^6.11.2",
+    "react-tabs": "^6.0.1",
+    "validator": "^13.9.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}

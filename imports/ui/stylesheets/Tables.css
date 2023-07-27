@@ -1,0 +1,17 @@
+.table-container {
+  overflow: auto;
+  max-height: 200px;
+}
+
+.table-component {
+  border: 1px solid black;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table-component thead th,
+.table-component tbody td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
